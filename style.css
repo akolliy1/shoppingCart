@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 450ms ease-in;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section {
+    width: 80%;
+    padding: 60px 0;
+    margin: auto;
+    display: flex;
+}
+
+form, article {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+form {
+    margin-right: 10px;
+    padding: 10px 40px;
+    background: rgb(152, 199, 152);
+    min-height: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.form-group label {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.form-group label::after {
+    content: " : *";
+    color: rgb(230, 31, 24)
+}
+
+.form-group input {
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px rgb(152, 199, 152) solid;
+}
+
+button {
+    height: 40px;
+    border: 1px rgb(152, 199, 152) solid;
+    font-size: 19px
+}
+
+article {
+    margin-left: 10px;
+    padding: 10px 40px;
+    background: rgb(183, 214, 183);
+}
+
+.item {
+    background: white;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-shadow: 1px 1px 2px gainsboro;
+    font-size: 18px;
+    display: flex;
+    cursor: pointer;
+}
+
+.item i {
+    margin-right: 10px;
+    color: green
+}
+
+.item:hover {
+    transform: scaleX(0.98)
+}
